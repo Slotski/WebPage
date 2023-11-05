@@ -1,0 +1,18 @@
+img {
+    width: 10%;
+}
+
+.UpHit {
+    display: block;
+    flex: 1;
+    position: relative;
+    margin-bottom: 400px;
+}
+
+.HitMeUp {
+    display: block;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 10%;
+    margin-right: auto;
+}

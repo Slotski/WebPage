@@ -1,0 +1,215 @@
+.headlines {
+    display:flex;
+    flex-direction: row;
+    position:initial;
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+
+
+
+body {
+    background-color: rgb(202, 209, 198);
+    cursor:auto;
+}
+
+header {
+    background-color: rgb(238, 240, 236);
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height:15vw;
+    margin: 10px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+p {
+        font-family: 'Raleway', sans-serif;
+
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(202, 209, 198);
+    transition: 0.9s;
+}
+
+p a:hover {
+    color: rgb(238, 240, 236);
+}
+
+*:focus {
+    outline: none;
+  }
+
+::selection {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.head {
+    font-size: 4.5vw;
+    font-family: 'Grandiflora One', serif;
+    margin-left: 60px;
+    padding-right: 50px;
+    border-right: 1px black solid;
+    position: absolute;
+}
+
+.hidden_menu {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow-y: auto;
+    transition: opacity .15s linear;
+    background-color: rgb(238, 240, 236);
+    color: #696f71;
+}
+
+.image {
+    margin-bottom: 15px;
+    max-width: 2000px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.div1 {
+    display: flex;
+    width: 1300px;
+    height: auto;
+    background-color: rgb(238, 240, 236);
+}
+
+.home-pic {
+    padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+
+.home-text {
+    padding: 20px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    width: 700px;
+    z-index: 1;
+}
+
+.home-text:active {
+    border: none;
+}
+
+
+.home-welcome {
+    font-family: 'Grandiflora One', serif;
+    font-size: 2.5vw;
+    font-weight: 750;
+}
+
+.home-picture  {
+    border-radius: 30px;
+    height: 700px;
+}
+
+@media (min-width: 750px) {
+    main {width:100%;}
+}
+
+@media (min-width: 750px), (max-width: 999px) {
+    .div1 {
+        width: 85%;
+    }
+}
+
+@media (min-width: 300px), (max-width: 749px) {
+    .div1 {
+        width: 75%;
+    }
+}
+
+@media (min-width: 751px), (max-width: 999px) {
+    .image {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1000px), (max-width: 1499px) {
+    .image {
+        width: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height:15vw;
+    margin: 10px;
+    padding: 30px;
+    background-color: #696f71;
+    font-weight: 800;
+}
+
+.footer-selection {
+    display: grid;
+    grid-template-columns: 80px 120px 120px 120px;
+    row-gap: 20px;
+}
+
+
+#idLinkedInIcon{background-color:rgb(202, 209, 198);
+    border-radius:6px;
+    color: rgb(238, 240, 236);cursor:pointer;
+    display:inline-block;
+    font:bold 50px Arial, Helvetica, sans-serif;
+    height:55px;
+    margin-top:1px;
+    text-align:center;
+    width:55px;
+    transition: 0.95s;}
+
+#idLinkedInIcon:hover{background-color:#06d;}
+
+
+.headlines {
+    font-family: 'Grandiflora One', serif;
+}
+
+.linehead {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.95s;
+}
+
+.linehead:hover {
+    text-decoration: underline gray;
+
+}
+
+
+.sequence {
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.7s;
+}
+
+.sequence:hover {
+    padding: 10px;
+    border: 2px dashed gray;
+}

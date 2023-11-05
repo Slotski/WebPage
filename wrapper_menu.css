@@ -1,0 +1,122 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Grandiflora One', serif;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, 
+    rgb(202, 209, 198),
+    rgb(206, 211, 200),
+    rgb(210, 213, 202),
+    rgb(215, 215, 204),
+    rgb(219, 217, 206),
+    rgb(223, 219, 209),
+    rgb(227, 221, 211),
+    rgb(232, 223, 213),
+    rgb(236, 226, 215),
+    rgb(238, 240, 236)
+    );
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}    
+
+#active:checked ~ .wrapper {
+    clip-path: circle(75%);
+} 
+
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(to right, 
+    rgb(202, 209, 198),
+    rgb(206, 211, 200),
+    rgb(210, 213, 202),
+    rgb(215, 215, 204),
+    rgb(219, 217, 206),
+    rgb(223, 219, 209),
+    rgb(227, 221, 211),
+    rgb(232, 223, 213),
+    rgb(236, 226, 215),
+    rgb(238, 240, 236)
+    );
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#active:checked ~ .menu-btn {
+    background-color: #fff;
+    color: black;
+} 
+
+#active:checked ~ .menu-btn i:before{ 
+    content: "\f00d";
+}
+
+
+.wrapper ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper ul li {
+    margin: 15px 0;
+}
+
+
+
+.wrapper ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 60px;
+    padding: 5px 50px;
+    position: relative;
+    line-height: 100px;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+    background-color: #fff;
+    border-radius: 70px;
+}
+
+input {
+    display: none;
+}
